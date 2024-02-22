@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>RGB Colors</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <h1>RGB Colors</h1>
+
+    <p>
+      An RGB Color is specified by
+      <span class="rgbtext">rgb(red, green, blue)</span>
+    </p>
+
+    <p>
+      The parameters red, green and blue specify the intesity of the color 0
+      <span class="slanted-text">(lowest)</span> to 255
+      <span class="slanted-text">(highest)</span>
+    </p>
+
+    <hr />
+
+    <h2>Try it out for yourself</h2>
+
+    <div id="rgbinput">
+      <label for="red">red: </label>
+      <input
+        placeholder="255"
+        style="background-color: red"
+        min="0"
+        max="255"
+        type="number"
+        id="red"
+      />
+      <label for="green">green: </label>
+      <input
+        placeholder="255"
+        style="background-color: green"
+        min="0"
+        max="255"
+        type="number"
+        id="green"
+      />
+      <label for="blue">blue: </label>
+      <input
+        placeholder="0"
+        style="background-color: blue"
+        min="0"
+        max="255"
+        type="number"
+        id="blue"
+      />
+    </div>
+
+    <div id="colorbuttons">
+      <button id="blackbutton">black</button>
+      <button id="whitebutton">white</button>
+    </div>
+
+    <p><canvas id="myCanvas" width="400px" height="200px"></canvas></p>
+
+    <p><button id="previewbutton">preview</button></p>
+
+    <p class="rgbtext">rgb(255, 255, 0)</p>
+
+    <hr />
+
+    <p>
+      <a target="_blank" href="https://en.wikipedia.org/wiki/RGB_color_model"
+        >Learn more</a
+      >
+      about RGB Color on Wikipedia
+    </p>
+  </body>
+</html>
